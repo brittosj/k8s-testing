@@ -6,7 +6,7 @@ metadata:
   name: my-nginx
 spec:
   containers:
-  - image: brittosj/httpd
+  - image: brittosj/httpd:1.1
     name: nginx
 
 ---
