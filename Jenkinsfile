@@ -14,9 +14,9 @@ pipeline {
 
         stage('Build docker image'){
             steps{
-                    sh 'docker build -t brittosj/httpd:3.0 .'
+                    sh 'docker build -t brittosj/httpd:3.1 .'
 		    sh 'echo $DH_CREDENTIALS_PSW | docker login -u $DH_CREDENTIALS_USR --password-stdin'
-		    sh 'docker push brittosj/httpd:3.0'
+		    sh 'docker push brittosj/httpd:3.1'
 		}
              }
         
